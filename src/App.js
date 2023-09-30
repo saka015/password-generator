@@ -31,7 +31,7 @@ const App = () => {
   const copyToClipboard = useCallback(() => {
     passwordRef.current?.focus();
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0,8);
+    passwordRef.current?.setSelectionRange(0,999);
     window.navigator.clipboard.writeText(pswd);
   }, [pswd]);
 
